@@ -34,8 +34,8 @@ def handle_invalid_usage(error):
 # generate sitemap with all your endpoints
 
 @app.route("/")# Aquí definimos el primer path de la API: GET /
-def hello():
-    return "Hello World!"  # Aquí flask devolverá "Hello World, esto podría ser un string HTML o un string JSON.
+def sitemap():
+    return generate_sitemap(app)
 
 #PEOPLE
 
